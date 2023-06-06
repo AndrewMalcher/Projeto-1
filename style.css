@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+header .btn-menu{
+    display: none;
+}
+
+header {
+    background-color: yellow;
+    color: #000000;
+    width: 100%;
+}
+
+header img {
+    width: 50% ;    
+}
+
+
+
+header li {
+    display: inline;
+    margin-left: 40px;
+
+}
+
+header li a {
+    color: azure;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+ nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+#sobre .container .conteudo ol {
+    padding-bottom: 50px;
+}
+
+.button,
+button {
+    border-top: 1px solid #000000;
+    background: #d2d665;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e1ff00), to(#d2d665));
+    background: -webkit-linear-gradient(top, #e1ff00, #d2d665);
+    background: -moz-linear-gradient(top, #e1ff00, #d2d665);
+    background: -ms-linear-gradient(top, #e1ff00, #d2d665);
+    background: -o-linear-gradient(top, #e1ff00, #d2d665);
+    padding: 5px 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #000000;
+    font-size: 14px;
+    font-family: Georgia, Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button:hover,
+button:hover {
+    border-top-color: #000000;
+    background: #000000;
+    color: #eeff00;
+}
+
+.button:active,
+button:active {
+    border-top-color: #ffffff;
+    background: #ffffff;
+}
+
+
+
+#sobre .container, .servicos-prestados .container  {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+section .conteudo {
+    width: 90%;
+}
+
+section .conteudo h2 {
+    padding-bottom: 20px;
+}
+
+.imagens {
+    display: block;
+}
+
+img {
+    width: 600px;
+    padding: 20px;
+}
+
+footer {
+    background-color: yellow;
+}
+
+footer .container h2 {
+    text-align: center;
+}
+
+.navbarfooter ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+footer .container .direitos {
+    padding: 20px;
+}
+
+#contato {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#contacts{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#contato .container h2 {
+    margin-bottom: 10px;
+}
+
+form input,
+textarea,
+button,
+label {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
+
+p.direitos {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+}
+
+label{
+    font-size: 1.5em;
+}
+
+#contacts{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contacts h2{
+    text-align: center;
+}
+
+#contacts .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 140px;
+}
+
+.servicos-prestados{
+    margin-top: 30px;
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.servicos-prestados .servico{
+    background-color: #d2d665;
+    border-radius: 20px;
+}
+
+.servicos-prestados .container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 1%;
+}
+
+.servicos-prestados .servico img{
+    width: 100%;
+}
+
+.servicos-prestados .servico h2{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.servicos-prestados .servico button{
+    margin: 10% 35%;
+}
+
+@media screen and (max-width: 767px) {    
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav ul{
+        display: none;
+        margin-left: 50px;
+    }
+
+    header .btn-menu{
+        display: block;
+        margin-right: 20px;
+    }
+
+    #sobre .container {
+        display: block;
+    }
+    
+    #sobre img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sobre .conteudo{
+        margin: 0 auto;
+    }
+
+    .servicos-prestados{
+        margin-top: 30px;
+        width: 367px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .servicos-prestados .servico{
+        background-color: #d2d665;
+        border-radius: 20px;
+    }
+    
+    .servicos-prestados .container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2%;
+        width: 50%;
+    }
+    
+    .servicos-prestados .servico img{
+        width: 80%;
+    }
+    
+    .servicos-prestados .servico h2{
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #000000;
+    }
+    
+    .servicos-prestados .servico button{
+        margin: 30px auto;
+}
+
+    section #faleconosco{
+        display: none;
+    }
+
+    #contacts .conteudo{
+        display: block;
+        padding: 25px 200px;
+    }
+
+    #contacts .forms{
+        padding: 0;
+    }
+
+
+    form textarea {
+        resize: none;
+        width: 180px;
+        height: 100px;
+    }
+
+    #contacts{
+        display: none;
+    }
+
+    footer {
+        bottom: 0;
+        background-color: yellow;
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    .conteudo1 {
+        flex: 1;
+        /* Adicione a margem inferior para criar espaço para o footer */
+        margin-bottom: 100px;
+    }
+}
