@@ -353,3 +353,71 @@ label{
         margin-bottom: 100px;
     }
 }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .container{
+            width: 90%;
+        }
+
+
+        .botao-menu {
+            display: none;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        .servicos-prestados{
+            width: 820px;
+        }
+
+        .servicos-prestados .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 2%;
+            width: 50%;
+        }
+
+        #sobre .container {
+            display: block;
+        }
+        
+        #sobre img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    
+        #sobre .conteudo{
+            margin: 0 auto;
+        }
+
+        .imagens {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        nav ul{
+            display: none;
+            margin-left: 50px;
+        }
+
+        #contacts .conteudo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 15px;
+        }
+
+        form {
+            display: block;
+            padding: 50px;
+        }
+        
+    }
