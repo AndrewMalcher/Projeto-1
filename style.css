@@ -14,13 +14,18 @@
 
 }
 
+
+/* COMEÇA O HEADER */
+
+
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .btn-menu{
+header .btn-menu {
     display: none;
 }
 
@@ -31,7 +36,7 @@ header {
 }
 
 header img {
-    width: 200px ;    
+    width: 200px;
 }
 
 
@@ -47,19 +52,21 @@ header li a {
     text-decoration: none;
 }
 
-nav ul {
+header ul,
+footer ul {
     list-style-type: none;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
 }
 
-#sobre .container .conteudo ol {
-    padding-bottom: 50px;
-}
+
+/*FIM DO HEADER*/
+
+/*DECORAÇÕES DOS BOTÕES*/
 
 .button,
 button {
@@ -98,51 +105,28 @@ button:active {
     background: #ffffff;
 }
 
+/*FIM DA DECORAÇÕES DOS BOTÕES*/
 
-
-#sobre .container, .servicos-prestados .container  {
+#sobre .container,
+.servicos-prestados .container {
     margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-section .conteudo {
-    width: 90%;
+#sobre .container .conteudo ol {
+    padding-bottom: 50px;
 }
 
 section .conteudo h2 {
     padding-bottom: 20px;
 }
 
-.imagens {
-    display: block;
-}
 
 img {
-    width: 600px;
-    padding: 20px;
-}
-
-footer {
-    background-color: yellow;
-}
-
-footer .container h2 {
-    text-align: center;
-}
-
-.navbarfooter ul  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 70px;
-    text-decoration: none;
-    margin-bottom: 16px;
-}
-
-footer .container .direitos {
+    display: block;
+    width: 100%;
     padding: 20px;
 }
 
@@ -151,9 +135,12 @@ footer .container .direitos {
     padding-bottom: 5px;
 }
 
-#contacts{
+#contacts {
     background-color: antiquewhite;
     padding: 20px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #contato .container h2 {
@@ -175,78 +162,131 @@ form textarea {
     height: 100px;
 }
 
-p.direitos {
+#contacts h2 {
     text-align: center;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-
-footer {
-    margin-top: auto;
-    padding: 20px;
-}
-
-label{
-    font-size: 1.5em;
-}
-
-#contacts{
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#contacts h2{
-    text-align: center;
-}
-
-#contacts .conteudo{
+#contacts .conteudo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 140px;
 }
 
-.servicos-prestados{
+/* COMEÇO DO FOOTER*/
+footer {
+    background-color: #E38B29;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+}
+
+/*  */
+footer .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 5%;
+
+}
+
+footer .grid-container {
+    text-align: justify;
+}
+
+footer nav ul li img {
+    width: 200px;
+}
+
+footer nav ul li ul {
+    display: block;
+    text-decoration: none;
+}
+
+footer nav ul li ul li {
+    text-decoration: none;
+    margin: 20px 0 20px 0;
+}
+
+footer form {
+    border: 4px solid #f1f1f1;
+    width: 100%;
+}
+
+/* Add some padding and a grey background color to containers */
+footer form .container {
+    padding: 20px;
+}
+
+/* Style the input elements and the submit button */
+footer form input[type=text],
+footer form input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+/* Add margins to the checkbox */
+footer form input[type=checkbox] {
+    margin-top: 16px;
+}
+
+/* Style the submit button */
+footer form input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+
+footer form input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+
+/* FIM DO FOOTER*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.servicos-prestados {
     margin-top: 30px;
     width: 1280px;
     margin: 0 auto;
     text-align: center;
-    
+
 }
 
-.servicos-prestados .servico{
+.servicos-prestados .servico {
     background-color: #d2d665;
     border-radius: 20px;
 }
 
-.servicos-prestados .container{
+.servicos-prestados .container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     column-gap: 1%;
 }
 
-.servicos-prestados .servico img{
+.servicos-prestados .servico img {
     width: 100%;
 }
 
-.servicos-prestados .servico h2{
+.servicos-prestados .servico h2 {
     width: 100%;
     padding: 10px;
     border-bottom: 1px solid #000000;
 }
 
-.servicos-prestados .servico button{
+.servicos-prestados .servico button {
     margin: 10% 35%;
 }
 
-@media screen and (max-width: 767px) {    
+label {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
 
     .imagens {
         display: flex;
@@ -259,12 +299,12 @@ label{
         min-height: 100vh;
     }
 
-    nav ul{
+    nav ul {
         display: none;
         margin-left: 50px;
     }
 
-    header .btn-menu{
+    header .btn-menu {
         display: block;
         margin-right: 20px;
     }
@@ -272,59 +312,59 @@ label{
     #sobre .container {
         display: block;
     }
-    
+
     #sobre img {
         width: 80%;
         margin: 0 auto;
     }
 
-    #sobre .conteudo{
+    #sobre .conteudo {
         margin: 0 auto;
     }
 
-    .servicos-prestados{
+    .servicos-prestados {
         margin-top: 30px;
         width: 367px;
         margin: 0 auto;
         text-align: center;
     }
-    
-    .servicos-prestados .servico{
+
+    .servicos-prestados .servico {
         background-color: #d2d665;
         border-radius: 20px;
     }
-    
-    .servicos-prestados .container{
+
+    .servicos-prestados .container {
         display: grid;
         grid-template-columns: auto;
         gap: 2%;
         width: 50%;
     }
-    
-    .servicos-prestados .servico img{
+
+    .servicos-prestados .servico img {
         width: 80%;
     }
-    
-    .servicos-prestados .servico h2{
+
+    .servicos-prestados .servico h2 {
         width: 100%;
         padding: 0;
         border-bottom: 1px solid #000000;
     }
-    
-    .servicos-prestados .servico button{
-        margin: 30px auto;
-}
 
-    section #faleconosco{
+    .servicos-prestados .servico button {
+        margin: 30px auto;
+    }
+
+    section #faleconosco {
         display: none;
     }
 
-    #contacts .conteudo{
+    #contacts .conteudo {
         display: block;
         padding: 25px 200px;
     }
 
-    #contacts .forms{
+    #contacts .forms {
         padding: 0;
     }
 
@@ -335,7 +375,7 @@ label{
         height: 100px;
     }
 
-    #contacts{
+    #contacts {
         display: none;
     }
 
@@ -353,70 +393,70 @@ label{
     }
 }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-        .container{
-            width: 90%;
-        }
-
-
-        .botao-menu {
-            display: none;
-        }
-
-        p {
-            font-size: 1.5em;
-        }
-
-        .servicos-prestados{
-            width: 100%;
-        }
-
-        .servicos-prestados .container{
-            display: grid;
-            grid-template-columns: auto auto;
-            gap: 2%;
-            width: 50%;
-        }
-
-        #sobre .container {
-            display: block;
-        }
-        
-        #sobre img {
-            width: 80%;
-            margin: 0 auto;
-        }
-    
-        #sobre .conteudo{
-            margin: 0 auto;
-        }
-
-        .imagens {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-    
-        nav ul{
-            display: none;
-            margin-left: 50px;
-        }
-
-        #contacts .conteudo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 15px;
-        }
-
-        form {
-            display: block;
-            padding: 50px;
-        }
-        
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
     }
+
+
+    .botao-menu {
+        display: none;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .servicos-prestados {
+        width: 100%;
+    }
+
+    .servicos-prestados .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2%;
+        width: 50%;
+    }
+
+    #sobre .container {
+        display: block;
+    }
+
+    #sobre img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sobre .conteudo {
+        margin: 0 auto;
+    }
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav ul {
+        display: none;
+        margin-left: 50px;
+    }
+
+    #contacts .conteudo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 15px;
+    }
+
+    form {
+        display: block;
+        padding: 50px;
+    }
+
+}

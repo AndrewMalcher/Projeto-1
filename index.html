@@ -38,7 +38,7 @@
         <div class="main">
             <section id="sobre">
                 <div class="container">
-                    <div class="imagens">
+                    <div>
                         <img src="img/Imagem do WhatsApp de 2023-04-03 à(s) 20.39.19.jpg"
                             alt="Oficina de chão vermelho e parede amarela" />
                         <img src="img/212050-x-dicas-para-fazer-a-precificacao-de-servicos-da-oficina.jpg"
@@ -159,21 +159,70 @@
     <footer>
         <div class="navbarfooter">
             <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" title="Ir para a seção de sobre mim">Sobre nós</a>
+                <ul class="grid-container">
+                    <li class="container-footer">
+                        <img src="img/carlinhos_branco.png" alt="">
+                        <i class="fa-solid fa-star fa-beat" style=" color: #ffea00; text-align: center;"></i>
+                        <i class="fa-solid fa-star fa-beat" style="color: #ffea00;"></i>
+                        <i class="fa-solid fa-star fa-beat" style="color: #ffea00;"></i>
+                        <i class="fa-solid fa-star fa-beat" style="color: #ffea00;"></i>
+                        <i class="fa-solid fa-star fa-beat" style="color: #ffea00;"></i>
+                        <p>Com mais de 20 anos de experiência, seu Carlinhos é reconhecido como um dos melhores
+                            eletricistas e acessoristas de autos da região, sempre pronto para atender às necessidades
+                            de seus clientes com agilidade e eficiência.</p>
                     </li>
-                    <li>
-                        <a href="motivos.html" title="Ir para a seção de sobre mim">Quando procurar</a>
+                    <li class="container-footer">
+                        <h3>Fale conosco</h3>
+                        <br>
+                        <p>Rua Visconde de Porto Alegre, 1819 - Praça 14
+                            <br>
+                            <br>
+                            Manaus-AM, CEP 69020-130
+                        </p>
+                        <br>
+                        <p>Telefone: (92) 99167-7839</p>
                     </li>
-                    <li>
-                        <a href="#contact" title="Ir para a seção de contato">Contato</a>
+                    <li class="container-footer">
+                        <!-- FOOTER LINKS UTEIS -->
+                        <ul>
+                            <h4>Links úteis</h4>
+                            <li>
+                                <a href="index.html" title="Ir para a seção de sobre mim">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="motivos.html" title="Ir para a seção de sobre mim">Quando procurar</a>
+                            </li>
+                            <li>
+                                <a href="#contact" title="Ir para a seção de contato">Contato</a>
+                            </li>
+                        </ul>
+                        <!-- FIM FOOTER LINKS UTEIS -->
+                    </li>
+                    <li class="container-footer">
+                        <form action="action_page.php">
+                            <div class="container">
+                                <h2>Se inscreva</h2>
+                            </div>
+
+                            <div class="container" style="background-color:white">
+                                <input type="text" placeholder="Email address" name="mail" required>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                                </label>
+                            </div>
+
+                            <div class="container">
+                                <input type="submit" value="Subscribe">
+                            </div>
+                        </form>
+
                     </li>
                 </ul>
             </nav>
-            <p class="direitos">Todos os direitos reservados. 2023</p>
+            <p>Todos os direitos reservados. 2023</p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/d7030847f9.js" crossorigin="anonymous"></script>
     <script>
         var inputTelefone = document.getElementById("telefone");
         inputTelefone.addEventListener("input", function () {
