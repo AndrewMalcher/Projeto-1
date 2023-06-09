@@ -178,6 +178,14 @@ footer {
     background-color: #E38B29;
     text-align: center;
     margin-top: auto;
+    color: #ffffff;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #FDEEDC;
+
 }
 
 /*  */
@@ -312,7 +320,7 @@ label {
         min-height: 100vh;
     }
 
-    nav ul {
+    header nav ul {
         display: none;
         margin-left: 50px;
     }
@@ -352,10 +360,13 @@ label {
         grid-template-columns: auto;
         gap: 2%;
         width: 50%;
+        
     }
 
     .servicos-prestados .servico img {
         width: 80%;
+        margin: 0 auto;
+
     }
 
     .servicos-prestados .servico h2 {
@@ -404,7 +415,12 @@ label {
         gap: 2rem;
         padding: 20px;
         text-align: center;
+        justify-items: center;
 
+    }
+
+    footer .grid-container .container-footer img{
+        margin: 0 auto;
     }
 
 
