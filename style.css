@@ -178,14 +178,16 @@ footer {
     background-color: #E38B29;
     text-align: center;
     margin-top: auto;
-    padding: 20px;
 }
 
 /*  */
 footer .grid-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 5%;
+    grid-template-columns: 18rem 18rem 18rem 18rem;
+    gap: 6.65%;
+    justify-items: center;
+    padding: 20px;
+
 
 }
 
@@ -208,13 +210,7 @@ footer nav ul li ul li {
 }
 
 footer form {
-    border: 4px solid #f1f1f1;
     width: 100%;
-}
-
-/* Add some padding and a grey background color to containers */
-footer form .container {
-    padding: 20px;
 }
 
 /* Style the input elements and the submit button */
@@ -240,9 +236,19 @@ footer form input[type=submit] {
 footer form input[type=submit]:hover {
     opacity: 0.8;
 }
+footer .navbarfooter p{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
+footer .footer-copyright{
+    padding: 1rem;
+    background-color: #674114;
+    width: 100%;
+}
 
-/* FIM DO FOOTER*/
+                                            /* FIM DO FOOTER*/
 body {
     display: flex;
     flex-direction: column;
@@ -288,6 +294,13 @@ label {
 
 @media screen and (max-width: 767px) {
 
+
+    .conteudo1 {
+        flex: 1;
+        /* Adicione a margem inferior para criar espaço para o footer */
+        margin-bottom: 100px;
+    }
+
     .imagens {
         display: flex;
         flex-direction: column;
@@ -324,7 +337,7 @@ label {
 
     .servicos-prestados {
         margin-top: 30px;
-        width: 367px;
+        width: 100vw;
         margin: 0 auto;
         text-align: center;
     }
@@ -382,18 +395,29 @@ label {
     footer {
         bottom: 0;
         background-color: yellow;
-        padding: 20px;
         margin-top: auto;
     }
 
-    .conteudo1 {
-        flex: 1;
-        /* Adicione a margem inferior para criar espaço para o footer */
-        margin-bottom: 100px;
+    footer .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+        padding: 20px;
+        text-align: center;
+
     }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing:border-box ;
+
+    }
+
     .container {
         width: 90%;
     }
@@ -459,4 +483,17 @@ label {
         padding: 50px;
     }
 
+    footer .grid-container {
+        font-size: 0.9rem;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    footer form {
+        border: 4px solid #f1f1f1;
+        width: 100%;
+    }
 }
