@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -77,7 +78,7 @@ button {
     background: -moz-linear-gradient(top, #e1ff00, #d2d665);
     background: -ms-linear-gradient(top, #e1ff00, #d2d665);
     background: -o-linear-gradient(top, #e1ff00, #d2d665);
-    padding: 5px 10px;
+    padding: 10px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -86,10 +87,10 @@ button {
     box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: #000000;
-    font-size: 14px;
-    font-family: Georgia, Serif;
+    font-size: 16px;
     text-decoration: none;
     vertical-align: middle;
+    width: 7rem;
 }
 
 .button:hover,
@@ -274,6 +275,8 @@ body {
 .servicos-prestados .servico {
     background-color: #d2d665;
     border-radius: 20px;
+    max-height: 100%;
+    white-space: nowrap;
 }
 
 .servicos-prestados .container {
@@ -293,7 +296,7 @@ body {
 }
 
 .servicos-prestados .servico button {
-    margin: 10% 35%;
+    margin: 20px auto;
 }
 
 label {
