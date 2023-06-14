@@ -266,9 +266,8 @@ body {
 }
 
 .servicos-prestados {
-    margin-top: 30px;
+    margin: 50px auto;
     width: 1280px;
-    margin: 0 auto;
     text-align: center;
 
 }
@@ -278,6 +277,10 @@ body {
     border-radius: 20px;
     max-height: 100%;
     white-space: nowrap;
+}
+
+body h2{
+    font-size: 24px;
 }
 
 .servicos-prestados .container {
@@ -290,10 +293,8 @@ body {
     width: 100%;
 }
 
-.servicos-prestados .servico h2 {
+.servicos-prestados .servico h3 {
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid #000000;
 }
 
 .servicos-prestados .servico button {
@@ -373,12 +374,6 @@ label {
 
     }
 
-    .servicos-prestados .servico h2 {
-        width: 100%;
-        padding: 0;
-        border-bottom: 1px solid #000000;
-    }
-
     .servicos-prestados .servico button {
         margin: 30px auto;
     }
@@ -450,7 +445,7 @@ label {
         display: none;
     }
 
-    p {
+    p, h3 {
         font-size: 1.5em;
     }
 
@@ -460,9 +455,9 @@ label {
 
     .servicos-prestados .container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         gap: 2%;
-        width: 50%;
+        width: 65%;
     }
 
     #sobre .container {
